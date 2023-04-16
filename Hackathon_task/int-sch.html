@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:ital,wght@0,100;1,200&family=Roboto+Condensed:ital@1&family=Sono&display=swap');
+         *{
+            
+            padding: 0;
+            /* background: rgb(252, 234, 234); */
+            font-family: Pt Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .head{
+            text-align: center;
+            font-weight: 600;
+            color: rgb(124, 3, 130);
+        }
+        .sno{
+            border: 2px solid black;
+            margin-bottom: 30px;
+            background-color: #8cf9d1;
+            box-shadow: 20px rgb(rgb(255, 78, 78), rgb(158, 22, 243), rgb(11, 199, 133));
+            box-sizing: content-box;
+            background-origin: padding-box;
+            border-radius: 50px;
+            margin: 18px;
+            padding: 10px;
+            margin-bottom: 7px;
+            height: 266px;
+            
+        }
+        .h{
+            color: rgb(249, 50, 67);
+        }
+        .re-sch{
+            background-color: #e6fcdd;
+
+        }
+        .links{
+            text-decoration: none;
+            float: right;
+            border: 3px solid black;
+            background: rgb(118, 219, 118);
+            color: black;
+        }
+        .header{
+    background-color:rgb(189, 183, 183);
+}
+.logo{
+    height: 97px;
+    width: 138px;
+    padding: 5px 4px;
+    cursor: pointer;
+    margin-left: -87px;
+}
+nav{
+    display: flex;
+    background-color:rgb(67 69 69);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 7%;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -12px;
+}
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+    font-weight: 800;
+    font-size: 20px;
+    text-decoration: none;
+}
+.register-btn{
+    text-decoration: none;
+    border: 2px solid black;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    background: goldenrod;
+    color: black;
+    padding: 9px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fdfcfc;
+}
+.links{
+            text-decoration: none;
+            float: left;
+            border: 3px solid black;
+            background: rgb(118, 219, 118);
+            color: black;
+        }
+        ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 3px 30px;
+    margin: 0 5px;
+    text-transform: uppercase;
+    position: relative;
+}
+ul li a::before{
+    content: " ";
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    left: 15px;
+    bottom: 7px;
+    border: 5px solid rgb(222, 216, 219);
+    border-width: 0 0 2px 2px;
+    transition: all 0.3s;
+    opacity: 0;
+}ul li a::after{
+
+    content: " ";
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    right: 15px;
+    top: 7px;
+    border: 5px solid rgb(222, 216, 219);
+    border-width:2px 2px 0 0;
+    transition: all 0.3s;
+    opacity: 0;
+}
+ul li a:hover::before{
+left: -5px;
+bottom: -5px;
+opacity: 1;
+
+}ul li a:hover::after{
+    right: -5px;
+    top: -5px;
+    opacity: 1;
+}
+ul li a:hover{
+background-color:rgb(222, 216, 219);
+color: rgb(67 69 69);
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="images/logo.jpg" alt="img" class="logo">
+            <ul class="nav-links">
+                <li><a href="http://127.0.0.1:5500/Hackathon_task/index.html#ban">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/Hackathon_task/index.html#abt">About</a></li>
+                <li><a href="http://127.0.0.1:5500/Hackathon_task/index.html#scholar">Scholarship</a></li>
+                <li><a href="http://127.0.0.1:5500/Hackathon_task/contact%20us.html">Contact Us</a></li>
+                <li><a href="http://127.0.0.1:5500/Hackathon_task/index.html#ct">Help</a></li>
+            </ul>
+            <a href="http://127.0.0.1:5500/Hackathon_task/sign.html" class="register-btn"><strong>Register</strong></a>
+        </nav>
+        </div>
+    <div class="re-sch">
+        <h1 class="head">Intermediate Based Scholarship</h1>
+        <div class="sno">
+            <h3 class="h">SSO Scholarship</h3>
+            <div class="info">
+                <strong>Eligiblity:</strong>Candidates from class XI to postgraduate degree<br>
+                <strong>Scholarship Amount:</strong>Up to INR 25,000<br>
+                <strong>Last Date to apply:</strong>July 31, 2023<br>
+                </div>
+            <p>The SSO scholarship is an initiative of the state government of Rajasthan. This scholarship scheme is available for the students studying in class 11 to post-graduation courses. The main purpose behind this scholarship program is to provide financial aid to underprivileged meritorious students who are domiciles of Rajasthan. Under this scholarship program, the candidates can benefit from various post-matric schemes by Rajasthan Single Sign On (SSO) scholarship. The selected students will get maximum rewards of up to INR 25,000 per annum. </p>
+            <a href="https://sso.rajasthan.gov.in/signin" class="links">Register Here</a>
+        </div>
+        <div class="sno">
+            <h3 class="h">Swami Vivekananda Scholarship </h3>
+            <div class="info">
+                <strong>Eligiblity:</strong>Candidates studying class XI and above in 
+                    	West Bengal, India
+                <br>
+                <strong>Scholarship Amount:</strong>Up to INR 8,000<br>
+                <strong>Last Date to apply:</strong>March 31, 2023<br>
+                </div>
+            <p>The state government of West Bengal organizes the Swami Vivekananda scholarship. This scholarship scheme is available for the students studying in class 11 and above. This scholarship for class 12 is to provide financial help to impoverished students and motivate them to pursue their higher education. Students who are inhabitants of West Bengal and those who belong to the economically weaker society are given monetary assistance by the government of West Bengal. The students pursuing MPhil, undergraduate, postgraduate, and Ph.D. degrees are eligible to apply for this program. The selected applicants will be rewarded up to INR 8,000.</p>
+            <a href="https://svmcm.wbhed.gov.in/page/application_procedure.php" class="links">Register Here</a>
+        </div>
+        <div class="sno">
+            <h3 class="h">College Board India Scholarship</h3>
+            <div class="info">
+                <strong>Eligiblity:</strong>Students in class XI and class XII<br>
+                <strong>Scholarship Amount:</strong>Up to 100% waiver on tuition fee<br>
+                <strong>Last Date to apply:</strong>February 11, 2023<br>
+                </div>
+            <p>The College Board India scholarship aims to provide financial support to the students to pursue their studies in Indian universities to save their money by offering a discount while applying for the SAT exam. Under this program, the students should attend the Scholarship Aptitude Test (SAT) and score a minimum of 1350 out of the total 1600 score to be eligible for the scholarship. The program's sole aim is to provide scholarship opportunities to the students of class 11 and class 12. The selected students will get a 100% waiver on tuition fees here.  </p>
+            <a href="https://international.collegeboard.org/" class="links">Register Here</a>
+        </div>
+        <div class="sno">
+            <h3 class="h">MYSY Scholarship </h3>
+            <div class="info">
+                <strong>Eligiblity:</strong>Students who have passed the class X and class XII board exams from a recognised institution in 
+                    Region	Gujarat, India<br>
+                <strong>Scholarship Amount:</strong>Up to INR 2,00,000<br>
+                <strong>Last Date to apply:</strong>November 11, 2022<br>
+                </div>
+            <p>The state government of Gujarat organizes the Mukhyamantri Yuva Swavalamban Yojana (MYSY) scholarship. This scholarship is available for the students studying in classes 10 and 12 and is granted to those students who are domiciles of Gujarat. The primary aim of this scholarship for class 12 is to provide opportunities to economically weaker students studying in Gujarat. Students who have cleared their class 10th and 12th with a minimum mark of 80% are eligible to avail the benefits of this scholarship scheme. The selected students will get rewards up to INR 2,00,000 per annum.</p>
+            <a href="https://mysy.guj.nic.in/" class="links">Register Here</a>
+        </div>
+    </div>
+</body>
+</html>

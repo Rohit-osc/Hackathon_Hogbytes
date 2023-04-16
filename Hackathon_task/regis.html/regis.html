@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+     *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:rgb(232, 226, 226);
+}
+.sign-up{
+    display: block; 
+    text-align: center;
+    justify-content: center;
+    margin-top: 170px;
+    border: 2px solid black;
+    margin: 200px 500px;
+    background-color: rgb(145, 202, 202);
+}
+div{
+    padding: 19px;
+}
+
+.sign-up label{
+    margin: 10px 10px;
+}
+.btn{
+    background: blueviolet;
+    color:#fff;
+    margin: 4px;
+    width: 70px;
+    height: 25px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.log{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: -5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+   </style>
+</head>
+<body>
+    <div class="sign-up">
+        <p></p><h2>Register Here</h2><p></p>
+        <div>
+        <label><strong>Enter your name :</strong></label>
+        <input type="text" name="" id="fname" autocomplete="off" fdprocessedid="9oo5m">
+    </div>
+    <div>
+        <label><strong>Enter email id :</strong></label>
+        <input type="email" id="email" placeholder="xyz23@gmail.com" autocomplete="off" fdprocessedid="30um6f">
+    </div>
+    <div>
+        <label><strong>Create your password :</strong></label> 
+        <input type="password" id="pass" autocomplete="off" fdprocessedid="8962co">
+    </div>
+    <div>
+        <label><strong>Confirm your password :</strong></label> 
+        <input type="text" id="pass" autocomplete="off" fdprocessedid="82nz8l">
+    </div>
+        <button type="submit" class="btn" fdprocessedid="xl224">Create</button>
+        <button type="reset" class="btn" fdprocessedid="iy143x">Reset</button>
+        <h4>or register using<a href="www.google.com"> <img class="log" src="fb.jpg" width="25" height="25"></a> <a href="www.gmail.com"><img class="log" src="goog.jpg"  width="25" height="25"></a></h4>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

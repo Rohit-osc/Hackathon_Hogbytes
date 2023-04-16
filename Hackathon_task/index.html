@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="images/logo.jpg" alt="img" class="logo">
+            <ul class="nav-links">
+                <li><a href="#ban">Home</a></li>
+                <li><a href="#abt">About</a></li>
+                <li><a href="#scholar">Scholarship</a></li>
+                <li><a href="#msg">Contact Us</a></li>
+                <li><a href="#ct">Help</a></li>
+            </ul>
+            <a href="http://127.0.0.1:5500/Hackathon_task/regis.html/regis.html" class="register-btn"><strong>Register</strong></a>
+        </nav>
+    </div>
+    <div class="banner" id="ban" style="max-width:500px">
+            <img class="mySlides" src="images/Scholarship.jpg" alt="Banner" width="1520" height="400">
+            <img class="mySlides" src="ug1.jpg" width="1520" height="400">
+            <img class="mySlides" src="ug2.jpg" width="1520" height="400">
+          </div>
+          
+          <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 4000); 
+          }
+          </script>
+    <div class="container">
+        <div class="head"><h1>Scholarship</h1>
+        <input type="search" id="search" placeholder="Search here....."  autocomplete="off"><img src="images/search.jpg" alt="" id="srh">
+    </div>
+    <div class="stream" id="scholar">
+        <div class="ph"><img src="images/matric.jpg" alt=""><a href="http://127.0.0.1:5500/Hackathon_task/mat-sch.html"><p>Matriculation</p></a></div>
+        <div class="ph"><img src="images/12th.jpg" alt=""><a href="http://127.0.0.1:5500/Hackathon_task/int-sch.html#"><p>Intermediate</p></a></div>
+        <div class="ph"><img src="images/be.jpg" alt=""><a href="http://127.0.0.1:5500/Hackathon_task/bachelors.html"><p>Bachelors</p></a></div>
+        <div class="ph"><img src="images/ba.jpg" alt=""><a href="http://127.0.0.1:5500/Hackathon_task/masters.html"><p>Masters</p></a></div>
+        <div class="ph"><img src="images/research.jpg" alt=""><a href="http://127.0.0.1:5500/Hackathon_task/Research.html"><p>Research</p></a></div>
+    </div>
+    <div class="about" id="abt">
+        <div class="ab">
+            <h1 class="about-head">About</h1>
+            <p class="para">Our website helps every aspirant to know more about the required, eligible scholarship  in the field they want to proceed and as we know every person who want to persue their passion may require schlorship so we make their work easier by gathering all of them together and notify them based on the user's requirement.  </p><br>
+                <strong style="color: rgb(234, 12, 12);">"MONEY SHOULD NEVER BE A SETBACK IN ANY ASPIRANTS LIFE"  </strong>
+           
+        </div>
+    </div>
+    </div>
+    <div class="Contact" id="ct">
+       <div class="cf">
+        <strong>Enter your email'id:</strong><br><input type="email" id="mail" autocomplete="off" required><br>
+        <textarea name="" id="query" cols="40" rows="5" placeholder="Write your query here...."></textarea><br>
+        <button type="submit" class="c-btn">Send</button>
+       </div>
+    </div>
+    <div class="msg" id="msg">
+        <h1 class="about-head">Contact Us</h1>
+        <p><b> Mobile No:</b>+91 9876543010</p>
+           <p> <b>Email I'D:</b>scholar89@gmail.com</p>
+           <ul>
+            
+            <li><img src="twitter.jpg" height="40" width="40" class="c-img"></li>
+            <li><img src="fb.jpg" height="40" width="40" class="c-img"></li>
+            <li><img src="insta.jpg" height="40" width="40" class="c-img"></li>
+         </ul>
+    </div>
+    <div class="footer">
+        <p>Copyrights &copy; are reserved to this site.</p>
+    </div>
+    
+</body>
+</html>

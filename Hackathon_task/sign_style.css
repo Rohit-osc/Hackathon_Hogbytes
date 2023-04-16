@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:rgb(232, 226, 226);
+}
+.sign-up{
+    display: block; 
+    text-align: center;
+    justify-content: center;
+    margin-top: 170px;
+    border: 2px solid black;
+    margin: 200px 500px;
+    background-color: rgb(145, 202, 202);
+}
+div{
+    padding: 19px;
+}
+
+.sign-up label{
+    margin: 10px 10px;
+}
+.btn{
+    background: blueviolet;
+    color:#fff;
+    margin: 4px;
+    width: 70px;
+    height: 25px;
+}
+.btn:hover{
+    cursor: pointer;
+}
